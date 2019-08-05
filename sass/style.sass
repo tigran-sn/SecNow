@@ -1,0 +1,1748 @@
+$circleSize: 720px
+$darkBlue: #001E42
+$lightGreen: #008482
+$textColor: #525252
+$textColorDark: #151515
+$gold: #F6DB86
+$purple: #1E306E
+
+body
+	font-family: "Geometria"
+@media (min-width: 1300px)
+	.container
+		width: 1270px
+@media (min-width: 992px)
+	body
+		.header
+			.navigation__wrapper
+			.header__background
+			&--big
+				.header__background
+				& .navigation__wrapper
+			&--small
+				.subNavigation
+					background-color: rgba(0, 30, 66, 0.85)
+					border-radius: 8px
+					margin-top: 10px
+					padding-top: 10px
+					padding-bottom: 10px
+			&__infoWrapper
+			&__info
+			&__pageTitle
+			&__pageTagline
+			&__pageTaglineRow
+			&--noBackground
+				& .subNavigation
+					background-color: rgba(255, 255, 255, .95)
+					border-radius: 8px
+
+.main
+	min-height: 400px
+.fullHeight
+	height: 100%
+.btn
+	color: #fff
+	font-family: "Geometria-Medium"
+	font-size: 16px
+	background-color: $purple
+	border-radius: 60px
+	padding: .92em 2.6em
+	transition: .3s
+	&--small
+		padding: 0.5em 1.84em
+	&:hover
+		color: #fff
+		background-color: $purple
+	&--white
+		color: $purple
+		background-color: #fff
+
+.relative
+	position: relative
+.section
+	&__title
+		color: $textColorDark
+		font-family: "Geometria-Bold"
+		font-size: 48px
+		line-height: 1.20833em
+		letter-spacing: 0.01em
+		&--white
+			color: #fff
+		&--small
+			font-size: 32px
+			line-height: 1.25em
+			letter-spacing: normal
+			margin-top: 15px
+			margin-bottom: 15px
+	&__subTitle
+		font-family: "Geometria-Medium"
+		color: $lightGreen
+		font-size: 14px
+		text-transform: uppercase
+
+.header__background
+	&_homepage
+		background-image: url("../assets/img/background/header_bg.png")
+	&_whatWeDo
+		background-image: url("../assets/img/whatWeDo/header_bg.png")
+	&_securityMonitoring
+		background-image: url("../assets/img/securityMonitoring/header_bg.png")
+	&_dataStorage
+		background-image: url("../assets/img/dataStorage/header_bg.png")
+	&_businessAnalysis
+		background-image: url("../assets/img/businessAnalysis/header_bg.png")
+	&_businessOptimization
+		background-image: url("../assets/img/businessOptimization/header_bg.png")
+	&_whoWeAre
+		background-image: url("../assets/img/whoWeAre/header_bg.png")
+	&_callCenter
+		background-image: url("../assets/img/callCenter/header_bg.png")
+	&_cyberSecurity
+		background-image: url("../assets/img/cyberSecurity/header_bg.png")
+
+.header
+	height: 440px
+	overflow-x: hidden
+	position: relative
+	.navigation__wrapper
+		margin-top: 20px
+		position: relative
+		z-index: 1
+	.header__background
+		height: 100%
+		width: 100%
+		background-position: center
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+		position: absolute
+		left: 0
+		top: 0
+		z-index: -1
+	&--big
+		height: 760px
+		.header__background
+			height: 720px
+		& .navigation__wrapper
+			margin-top: 30px
+	&--small
+		// background: linear-gradient(0deg, rgba(0, 30, 66, 0.5), rgba(0, 30, 66, 0.5))
+		// display: flex
+		// justify-content: center
+		// align-items: center
+	&__infoWrapper
+		height: 100%
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+	&__info
+		max-width: 744px
+		width: 100%
+	&__pageTitle
+	&__pageTagline
+		color: #fff
+		font-size: 18px
+		line-height: 1.5
+		margin-top: 10px
+	&__pageTaglineRow
+		display: block
+	&--noBackground
+		height: 300px
+		& .subNavigation
+			padding-top: 10px
+			padding-bottom: 10px
+		& .subNavigation__item
+			margin-top: 4px
+			margin-bottom: 4px
+		& .navigation a,
+		& .navigation .subNavigation__link
+			color: $darkBlue
+		& .navigation .language
+			color: $darkBlue
+			opacity: 1
+			&:hover,
+			&--active
+				color: $lightGreen
+				opacity: 1
+		& .logo__wrapper .logo
+			background-image: url("../assets/img/logo/logo_dark.png")
+		& .logo__wrapper .logo__title
+			color: $darkBlue
+		& .section__title
+			position: relative
+			&::before
+				content: ""
+				height: 0.0625em
+				width: 1.66667em
+				background-color: $gold
+				display: block
+				margin: 0 auto
+				position: absolute
+				left: 0
+				right: 0
+				bottom: -0.625em
+
+
+
+.navigation__wrapper
+	font-size: 16px
+.navigation
+	// width: 12.5em
+	width: 520px
+	border-radius: 80px
+	padding: 0.66667em 1em
+	&--withoutLogo
+		justify-content: flex-end
+	&.navigation--dark
+		background-color: $darkBlue
+		& .subNavigation
+			background-color: $darkBlue
+		.joinUs
+			border: 2px solid #899AC7
+	& ul
+		// font-size: 16px
+		margin-bottom: 0
+	& a
+		color: #fff
+		font-family: "Geometria-Medium"
+		font-size: 1em
+	&__plusSign
+		margin-right: 6px
+	.aboutUs li
+		margin-left: .6em
+		margin-right: .6em
+	.languages
+		margin-left: 1em
+		.language
+			margin-left: .2em
+			margin-right: .2em
+			opacity: .7
+			transition: .3s
+			&:hover
+				opacity: 1
+			&--active
+				opacity: 1
+	.joinUs
+		font-size: 1em
+		text-align: center
+		border: 2px solid #A5CDE9
+		border-radius: 80px
+		margin-left: 1.3333em
+		padding: 1.07em 1.71em
+		transition: .1s ease-in-out
+		&:hover
+			background-color: #899AC7
+			transition: .1s ease-in-out
+.subNavigation__switcher
+	position: relative
+	&:hover .subNavigation
+		opacity: 1
+		transform: scaleY(1)
+		transition: .2s ease-in-out
+.subNavigation
+	width: 250px
+	border-radius: 0px 0px 8px 8px
+	padding-top: 40px
+	padding-bottom: 30px
+	padding-left: 30px
+	// padding-right: 30px
+	position: absolute
+	top: 17px
+	left: -26px
+	opacity: 0
+	transform: scaleY(0)
+	transform-origin: 0 0
+	transition: .2s ease-in-out
+	&__item
+		margin-top: 8px
+		margin-bottom: 8px
+		position: relative
+		transition: .2s ease-in-out
+		&:hover
+			padding-left: 10px
+			transition: .2s ease-in-out
+		&::before
+			content: url("../assets/img/icons/subMenu_arrow.png")
+			height: 16px
+			width: 14px
+			background-position: center
+			background-repeat: no-repeat
+			-webkit-background-size: cover
+			background-size: cover
+			position: absolute
+			top: 8px
+			left: -20px
+		&:hover .subNavigation__link
+			color: #A5CDE9
+			transition: .2s ease-in-out
+	&__link
+		color: #fff
+		font-family: "Geometria"
+		font-size: 16px
+		line-height: 30px
+.logo__wrapper
+	font-size: 20px
+	display: flex
+	align-items: center
+	& .logo
+		width: 2.5em
+		height: 2.2em
+		background-image: url("../assets/img/logo/circle_logo.png")
+		background-position: center
+		background-repeat: no-repeat
+		-webkit-background-size: cover
+		background-size: cover
+	& .logo__title
+		color: #fff
+		font-family: "Geometria-Bold"
+		font-size: 1.3em
+		margin-left: .57692em
+.circle
+	height: 36em
+	width: 36em
+	font-size: 20px
+	background-color: #98A1BD
+	background-image: url("../assets/img/effects/circle_effect.png")
+	background-position: bottom
+	background-repeat: no-repeat
+	background-size: auto
+	border-radius: 50%
+	/* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15) */
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: absolute
+	// top: 40px
+	bottom: 0
+	left: -20px
+	&.circle--dark
+		background-color: $darkBlue
+	.circle__content
+		max-width: 27.9em
+	& .circle__description
+		color: #fff
+		line-height: 1.20833em
+		letter-spacing: 0.01em
+		font-size: 2.4em
+	& .circle__link
+		color: #fff
+		font-family: "Geometria-Bold"
+		font-size: 1em
+		padding-left: 40px
+		position: relative
+		&::before
+			content: url("../assets/img/icons/circle_arrow.png")
+			height: 22px
+			display: block
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+
+.advantagesContainer
+	font-size: 13px
+	padding-bottom: 7.6923em
+.advantages
+	max-width: 1000px
+	width: 100%
+	margin: 0 auto
+	&__icon
+		height: 4em
+		width: 4em
+		background-image: url("../assets/img/icons/camera.png")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		margin: 1.53846em auto 3.07692em
+	&__title
+		max-width: 23.0769em
+		width: 100%
+		color: $textColorDark
+		font-family: "Geometria-Bold"
+		font-size: 2em
+		line-height: 1.3
+		margin: 0 auto 24px
+.advantage
+	color: $purple
+	font-family: "Geometria-Bold"
+	font-size: 1em
+	line-height: 1.5
+	text-transform: uppercase
+	margin-left: 2.1538em
+	margin-right: 2.1538em
+	margin-top: 8px
+	margin-bottom: 8px
+	position: relative
+	&:not(:last-child)::before
+		content: ""
+		height: 18px
+		width: 1px
+		background-color: #ccc
+		display: block
+		position: absolute
+		top: 50%
+		right: -2.1538em
+		transform: translateY(-50%)
+
+.faqsContainer
+	padding-top: 80px
+	padding-bottom: 94px
+.faq
+	max-width: 800px
+	width: 100%
+	margin: 0 auto
+	&__subtitle
+	&__title
+	.faq__question
+		color: #10192C
+		font-family: "Geometria-Bold"
+		font-size: 20px
+		font-weight: 600
+		background-color: transparent
+		border: 1px solid transparent
+		padding-left: 0
+		padding-right: 40px
+		padding-top: 30px
+		padding-bottom: 30px
+		position: relative
+		&:not(:first-child)
+			border-top: 1px solid #E6E6E6
+		&::before
+			// content: "\f067"
+			content: ""
+			height: 30px
+			width: 30px
+			color: #10192C
+			line-height: 30px
+			font-size: 24px
+			font-family: "FontAwesome"
+			text-align: center
+			background-image: url("../assets/img/icons/accordion_close.png")
+			background-repeat: no-repeat
+			background-position: center
+			display: block
+			position: absolute
+			top: 50%
+			right: 0
+			z-index: 1
+			transform: translateY(-50%)
+			transition: 0.1s
+		&[aria-expanded="true"]::before
+			transform: translateY(-50%) rotate(45deg)
+			transition: 0.1s
+		&::after
+			content: ""
+			height: 30px
+			width: 30px
+			border-radius: 50%
+			display: block
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translateY(-50%)
+			transition: 0.1s
+		&[aria-expanded="false"]::after
+			background-color: transparent
+			border: 1px solid #F5F4F9
+		&[aria-expanded="true"]::after
+			background-color: #F5F4F9
+			border: 1px solid transparent
+	.faq__answer
+		color: $textColor
+		font-size: 18px
+		line-height: 1.5
+		background-color: transparent
+		border: 1px solid transparent
+		padding-left: 0
+
+.targetGroupContainer
+	background-color: #F6F6F6
+	padding: 80px 0
+.targetGroup
+	&__subtitle
+	&__title
+		padding-right: 30px
+		margin-bottom: 30px
+	&__text
+		color: $textColor
+		font-size: 18px
+		line-height: 1.5
+		margin-top: 15px
+		margin-bottom: 15px
+	&__statisticsData
+		display: flex
+		justify-content: space-between
+		padding-top: 15px
+	&__data
+	&__dataValue
+		color: $darkBlue
+		font-family: "Geometria-Bold"
+		font-size: 26px
+		line-height: 1.3
+		display: block
+		padding-top: 15px
+		padding-bottom: 15px
+		position: relative
+		&::before
+			content: ""
+			height: 2px
+			width: 50px
+			background-color: $gold
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+	&__dataType
+		color: $purple
+		font-size: 18px
+		line-height: 1.5
+		padding-top: 15px
+		padding-bottom: 15px
+.imgCollage
+	height: 4.4em
+	width: 4.5em
+	font-size: 100px
+	position: relative
+	&__wrapper
+		display: flex
+		justify-content: flex-end
+	&__item
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: absolute
+	&__item1
+		height: 2.2em
+		width: 3.4em
+		background-image: url("../assets/img/collageImages/1.png")
+		bottom: 0
+		left: 0
+		z-index: 3
+	&__item2
+		height: 2.35em
+		width: 2.3em
+		background-image: url("../assets/img/collageImages/2.png")
+		left: .4em
+		top: 0
+		z-index: 2
+	&__item3
+		height: 3.3em
+		width: 2.3em
+		background-image: url("../assets/img/collageImages/3.png")
+		right: 0
+		bottom: .4em
+		z-index: 1
+
+.mission
+	background: linear-gradient(0deg, rgba(0, 30, 66, 0.4), rgba(0, 30, 66, 0.4)), url("../assets/img/background/mission.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding-top: 55px
+	padding-bottom: 40px
+	&__title
+		margin-bottom: 28px
+	&__icon
+		height: 32px
+		width: 32px
+		background-position: center
+		background-repeat: no-repeat
+		background-size: contain
+		margin-bottom: 15px
+	&__icon1
+		background-image: url("../assets/img/icons/mission1.png")
+	&__icon2
+		background-image: url("../assets/img/icons/mission2.png")
+	&__icon3
+		background-image: url("../assets/img/icons/mission3.png")
+	&__panelTitle
+		color: $textColorDark
+		font-family: "Geometria-Bold"
+		font-size: 20px
+		line-height: 30px
+	&__col
+
+	&__panel
+		background-color: #fff
+		border-radius: 8px
+		margin-top: 15px
+		margin-bottom: 15px
+		padding-top: 43px
+		padding-left: 20px
+		padding-right: 20px
+	&__content
+		height: 220px
+		padding-left: 5px
+		padding-right: 5px
+		& p,
+		& li
+			color: $textColor
+			font-family: Lora
+			font-size: 16px
+		& li
+			padding-left: 10px
+			position: relative
+			&::before
+				content: ""
+				height: 5px
+				width: 5px
+				background-color: #cccccc
+				border-radius: 50%
+				display: block
+				position: absolute
+				top: 10px
+				left: 0
+
+.requestAQoute
+	width: 180px
+	color: #fff
+	text-align: center
+	background-color: #5B657C
+	border-radius: 60px
+	display: block
+	margin: 50px auto 30px
+	padding: 13px 28px
+
+.howItWorks
+	font-size: 20px
+	padding-top: 4em
+	padding-bottom: 4em
+	&__steps
+		max-width: 40em
+		width: 100%
+		margin: 0 auto
+		position: relative
+		&::before
+			content: url("../assets/img/icons/howItWorks_arrow.png")
+			height: 22px
+			width: 51px
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			display: block
+			margin: 0 auto
+			position: absolute
+			top: 4em
+			left: 0
+			right: 0
+	&__step
+		max-width: 15em
+		width: 100%
+	&__step1
+	&__step2
+	&__stepImg
+		height: 9em
+		width: 9em
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		border-radius: 50%
+		margin: 0 auto 1.5em
+	&__stepImg1
+		background-image: url("../assets/img/background/step1.png")
+	&__stepImg2
+		background-image: url("../assets/img/background/step2.png")
+	&__stepText
+		color: #10192C
+		font-family: "Geometria-Bold"
+		font-size: 1.3em
+		line-height: 1.3
+		text-align: center
+
+.sns
+	&__container
+		font-size: 20px
+		background-color: #F6F6F6
+		padding-top: 4em
+		padding-bottom: 5em
+		position: relative
+	&__mainWrapper
+		position: relative
+	&__wrapper
+		// height: 675px
+		max-width: 60em
+		width: 100%
+		margin: 2em auto 0
+		position: relative
+	&__item
+		height: 33.75em
+	&__img
+		height: 100%
+		width: 100%
+		object-fit: cover
+	&__dots
+		height: 0
+		width: 0
+		transform: scale(0)
+	&__paging
+		min-width: 44px
+		text-align: center
+		background-color: #fff
+		border-radius: 24px
+		margin: 0 auto
+		padding-left: 5px
+		padding-right: 5px
+		position: absolute
+		bottom: 25px
+		left: 50%
+		transform: translateX(-50%)
+	&__pagingValue
+		font-family: "Geometria-Medium"
+		font-size: 14px
+		line-height: 20px
+		&.sns__slidesCount::before
+			content: "/"
+			margin-right: 3px
+	&__arrow
+		height: 40px
+		width: 40px
+		background-color: transparent
+		border: 2px solid #1E306E
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		top: 50%
+		z-index: 1
+		transform: translateY(-50%)
+		transition: .1s
+		&_prev
+			left: -60px
+			transform: translateY(-50%) rotate(180deg)
+		&_next
+			right: -60px
+		&.slick-disabled
+			border: 2px solid #A5CDE9
+			pointer-events: none
+			.sns__arrowIcon
+				background-image: url("../assets/img/icons/sns_arrow_light.png")
+				transition: .1s
+	&__arrowIcon
+		height: 16px
+		width: 8px
+		background-image: url("../assets/img/icons/sns_arrow_dark.png")
+		background-position: center
+		background-repeat: no-repeat
+		background-size: contain
+		display: block
+
+.whatWeDo
+	font-size: 100px
+	padding-top: .65em
+	padding-bottom: .65em
+	&__row
+		margin-top: .35em
+		margin-bottom: .35em
+		&:nth-child(odd)
+			flex-direction: row
+			& .whatWeDo__smallCol
+				padding-right: 40px
+			& .whatWeDo__bigCol
+				justify-content: flex-end
+			& .whatWeDo__bubble
+				left: 0
+		&:nth-child(even)
+			flex-direction: row-reverse
+			& .whatWeDo__smallCol
+				padding-left: 40px
+			& .whatWeDo__bigCol
+				justify-content: flex-start
+			& .whatWeDo__bubble
+				right: 0
+		&:nth-child(1) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/1.png")
+		&:nth-child(2) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/2.png")
+		&:nth-child(3) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/3.png")
+		&:nth-child(4) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/4.png")
+		&:nth-child(5) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/5.png")
+		&:nth-child(6) .whatWeDo__img
+			background-image: url("../assets/img/whatWeDo/6.png")
+	&__smallCol
+		// width: 4.4em
+		width: calc(100% - 7.4em)
+		display: flex
+		flex-direction: column
+	&__title
+	&__description
+		color: $textColor
+		font-size: .18em
+		line-height: 1.5
+	&__link
+		color: #1E306E
+		font-family: "Geometria-Medium"
+		font-size: .2em
+		line-height: 1.5
+		padding-left: 35px
+		position: relative
+		&::before
+			content: url("../assets/img/icons/whatWeDo_arrow.png")
+			height: 26px
+			display: block
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+	&__bigCol
+		height: 5.1em
+		width: 7.4em
+		display: flex
+		align-items: center
+		position: relative
+	&__bubble
+		height: 100%
+		width: 5.1em
+		border-radius: 50%
+		position: absolute
+		top: 0
+		&[data-bubleColor="purple"]
+			background-color: #A4B3EF
+		&[data-bubleColor="yellow"]
+			background-color: #FED995
+		&[data-bubleColor="blue"]
+			background-color: #AFD7FC
+		&[data-bubleColor="red"]
+			background-color: #FFB2B2
+		&[data-bubleColor="pink"]
+			background-color: #DC9CD2
+		&[data-bubleColor="green"]
+			background-color: #9CF1A9
+	&__img
+		height: 4.1em
+		width: 6.9em
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: 1
+
+.infoLayout
+	font-size: 16px
+	padding-top: 5em
+	padding-bottom: 5em
+	&__fluidImgRow
+		&--fluid
+		display: flex
+		&_img
+			height: 440px
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+		&--small
+			width: 450px
+			background-image: url("../assets/img/whoWeAre/img_row1.png")
+			margin-right: 20px
+		&--big
+			width: 640px
+			background-image: url("../assets/img/whoWeAre/img_row2.png")
+	&__smallCol
+		padding-right: .9375em
+	&__name
+		color: $textColorDark
+		font-family: "Geometria-Bold"
+		font-size: 2em
+		line-height: 1.25em
+		margin-top: 3px
+		padding-left: 3.75em
+		position: relative
+		&::before
+			content: ""
+			height: 2px
+			width: 2.5em
+			background-color: $textColorDark
+			display: block
+			position: absolute
+			top: .625em
+			left: 0
+	&__bigCol
+		max-width: 600px
+		width: 100%
+		padding-left: .9375em
+	&__list
+		max-width: 500px
+		margin-top: .625em
+		margin-bottom: .625em
+	&__listItem
+		color: $textColor
+		font-size: 1.125em
+		line-height: 1.5
+		display: block
+		position: relative
+		&::before
+			content: ""
+			height: 4px
+			width: 4px
+			background-color: $textColor
+			border-radius: 50%
+			display: block
+			position: absolute
+			top: 10px
+			left: -10px
+	&__paragraph
+		margin-top: 10px
+		& + .infoLayout__list
+			margin-top: 2.5em
+			margin-bottom: 2.5em
+	&__line
+		color: $textColor
+		font-size: 1.125em
+		line-height: 1.5
+		display: block
+	&__smallImg
+		height: 16.875em
+		width: 15em
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		margin-left: auto
+		margin-right: .9375em
+	&__bigImg
+		height: 26.875em
+		max-width: 37.5em
+		width: 100%
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		margin-left: .9375em
+	&__contentRow
+		padding-top: 2.5em
+		padding-bottom: 2.5em
+	&__imgRow
+		padding-top: 1.25em
+		padding-bottom: 1.25em
+	&__tabs
+		padding: 0
+
+		// Overriding jQuery UI default styles
+		.ui-tabs-nav li.ui-tabs-active
+			margin: 0
+			padding: 0
+		.infoLayout__tabItem[role="tab"]
+			font-family: "Geometria-Medium"
+			font-size: 14px
+			line-height: 20px
+			letter-spacing: 0.01em
+			background-color: #f6f6f6
+			border: none
+			border-bottom: 1px solid #fff
+			border-radius: 0
+			margin: 0
+			padding: 0
+			& .infoLayout__tabLink
+				color: $lightGreen
+				text-transform: uppercase
+				padding: 1.43em 1.45em
+				&:focus
+					outline: none
+			&.ui-tabs-active
+				background-color: #fff
+				border-top: 1px solid #f6f6f6
+				&:first-child
+					border-left: 1px solid #f6f6f6
+				&:last-child
+					border-right: 1px solid #f6f6f6
+				.infoLayout__tabLink
+					color: $purple
+					&:focus
+						outline: none
+		&.ui-widget.ui-widget-content
+			border: none
+			border-radius: 0
+	.ui-tabs .ui-tabs-panel
+		border: 1px solid #F6F6F6
+		margin-top: -2px
+	&__tabList[role="tablist"]
+		background-color: transparent
+		border: none
+		border-radius: 0
+		padding: 0
+	&__tabItem[role="tab"]
+		margin: 0
+	// Overriding jQuery UI default styles END
+	
+	&__panel
+	&__panelHeader
+		margin-top: 20px
+		margin-bottom: 22px
+	&__panelName
+		color: $textColorDark
+		font-family: "Geometria-Bold"
+		font-size: 32px
+		line-height: 40px
+		margin: 0
+	&__panelLogo
+	&__panelText
+		color: $lightGreen
+		font-size: 18px
+		line-height: 1.5
+	&__panelLink
+		color: $purple
+		font-family: "Geometria"
+		font-size: 16px
+		line-height: 1.5
+		display: block
+		margin-top: 30px
+		padding-left: 30px
+		position: relative
+		&::before
+			content: ""
+			height: 20px
+			width: 20px
+			display: block
+			background-image: url("../assets/img/icons/whatWeDo_link.png")
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			position: absolute
+			left: 0
+.weOffer
+	font-size: 20px
+	&__row
+		margin-top: 2.6em
+		margin-left: -10px
+		margin-right: -10px
+	&__panel
+		height: 10em
+		// width: 190px
+		color: #fff
+		font-family: "Geometria-Bold"
+		font-size: 1.3em
+		line-height: 1.3
+		text-align: center
+		background-color: $darkBlue
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-basis: 7.30769em
+		margin-bottom: 1em
+		margin-left: 10px
+		margin-right: 10px
+		padding-left: .5em
+		padding-right: .5em
+		&:nth-child(even)
+			margin-top: 2.11538em
+		&_1
+			background-image: url("../assets/img/whoWeAre/1.png")
+		&_2
+			background-image: url("../assets/img/whoWeAre/2.png")
+		&_3
+			background-image: url("../assets/img/whoWeAre/3.png")
+		&_4
+			background-image: url("../assets/img/whoWeAre/4.png")
+		&_5
+			background-image: url("../assets/img/whoWeAre/5.png")
+		&_6
+			background-image: url("../assets/img/whoWeAre/6.png")
+.whoWeAre
+
+.workWithUs
+	padding-top: 10px
+	padding-bottom: 80px
+	&__formWrapper
+		max-width: 600px
+		width: 100%
+		margin: 0 auto
+
+.snf
+	font-size: 20px
+	&__inputField
+		font-size: 1em
+		// border: 1px solid #f6f6f6
+		position: relative
+		&--full
+			width: 100%
+		&--half
+			width: calc(50% - 10px)
+		&--filled
+			& label
+				font-family: "Geometria"
+				font-size: 12px
+				top: 10px
+		&--error
+			input
+				border-color: #F13A3A
+			&::before
+				content: ""
+				height: 1em
+				width: 1em
+				background-image: url("../assets/img/logo/input__error.png")
+				background-position: center
+				background-repeat: no-repeat
+				background-size: contain
+				display: block
+				position: absolute
+				top: 24px
+				right: 15px
+				z-index: 1
+			&::after
+				content: attr(data-error)
+				color: #F13A3A
+				font-family: "Geometria-Medium"
+				font-size: 12px
+				line-height: 1.5
+				position: absolute
+				z-index: 1
+			&.snf__inputField--full::after
+				max-width: 150px
+				width: 100%
+				top: 25px
+				right: -160px
+			&.snf__inputField--half::after
+				top: 5px
+				right: 15px
+
+	&__input
+		width: 100%
+		color: $textColor
+		font-family: "Geometria-Medium"
+		font-size: .8em
+		line-height: 1.5
+		background-color: #F6F6F6
+		border: 1px solid #f6f6f6
+		border-radius: 0
+		outline: none
+		margin-bottom: 1.5625em
+		padding-top: 2em
+		padding-bottom: 10px
+		padding-left: .9375em
+		padding-right: 2.5em
+		position: relative
+		transition: .1s ease-in-out
+		&:focus
+			border-color: #899AC7
+			transition: .1s ease-in-out
+			& + label
+				font-family: "Geometria"
+				font-size: 12px
+				top: 10px
+				transition: .1s ease-in-out
+	&__label
+		color: $lightGreen
+		font-family: "Geometria-Medium"
+		font-size: 16px
+		line-height: 1.5
+		margin-bottom: 0
+		position: absolute
+		top: 20px
+		left: 15px
+		transition: .1s ease-in-out
+	&__selectLabel
+		font-weight: 700
+		z-index: 1
+		&--selectOpen
+			font-family: "Geometria"
+			font-size: 12px
+			top: 10px
+			transition: .1s ease-in-out
+	&__selectField
+		.snf__selectSaveBtn
+			opacity: 0
+			position: absolute
+			bottom: 55px
+			left: 35px
+			z-index: -1
+			transition: 0s
+		&--open
+			.snf__selectSaveBtn
+				opacity: 1
+				z-index: 5
+	&__select
+		min-height: 70px
+		height: 100%
+		width: 100%
+		color: $textColor
+		font-family: "Geometria-Medium"
+		font-size: .8em
+		line-height: 1.5
+		background-color: #F6F6F6
+		border: 1px solid #f6f6f6
+		border-radius: 0
+		outline: none
+		margin-bottom: 1.5625em
+		position: relative
+		transition: .1s ease-in-out
+		button
+			height: 70px
+			line-height: 90px
+			background-color: transparent
+			border: none
+			border-radius: 0
+			span
+				padding-left: 14px
+			& > div
+				height: 7px
+				width: 12px
+				background-image: url("../assets/img/icons/select_arrow.png")
+				background-position: center
+				background-repeat: no-repeat
+				background-size: contain
+				top: 30px
+				right: 15px
+				&.open
+					background-position: center
+					transform: rotate(180deg)
+		.ms-drop
+			border: none
+			border-radius: 0
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1)
+			padding: 30px 24px 80px
+			position: relative
+			z-index: 5
+
+			ul
+				display: flex
+				flex-direction: column
+				& > li
+					&.selected
+						label::before
+							background-color: #526699
+							border: 1px solid #526699
+					label
+						white-space: normal
+						display: flex
+					&:nth-child(n + 7)
+						margin-left: 35px
+		label
+			align-items: center
+			margin-top: 12px
+			margin-bottom: 12px
+			position: relative
+			&::before
+				content: ""
+				height: 20px
+				min-width: 20px
+				width: 20px
+				border: 1px solid #ccc
+				border-radius: 4px
+				display: block
+				margin-right: 0
+			&::after
+				content: ""
+				height: 14px
+				width: 14px
+				background-image: url("../assets/img/icons/select_mark.png")
+				background-position: center
+				background-repeat: no-repeat
+				background-size: contain
+				position: absolute
+				left: 3px
+				top: 50%
+				transform: translateY(-50%)
+			input[type="checkbox"]
+				// display: none
+				opacity: 0
+
+
+	&__submitBtn
+		margin-top: 10px
+		margin-bottom: 10px
+
+.footer
+	&__top
+		height: 500px
+		background: $purple url("../assets/img/effects/footer_effect1.png") left no-repeat
+	&__topContainer
+		background: url("../assets/img/effects/footer_effect2.png") right no-repeat
+	&__title
+	&__description
+		max-width: 350px
+		width: 100%
+		color: #fff
+		font-size: 18px
+		line-height: 1.5
+		margin-top: 20px
+		margin-bottom: 30px
+
+	&__bottom
+		background-color: $darkBlue
+		padding-top: 30px
+		padding-bottom: 30px
+		.navigation .languages .language
+			opacity: 1
+			&:hover
+				color: $lightGreen
+			&.language--active
+				color: $lightGreen
+
+.menuToggler
+	display: none
+.mainLayer
+	display: none
+	z-index: 4
+	transform: scale(0)
+	transition: .3s ease-in-out
+.copyright
+	color: $lightGreen
+	font-family: "Geometria"
+	font-size: 14px
+	line-height: 20px
+	letter-spacing: 0.01em
+	margin-top: 30px
+	margin-bottom: 0
+
+@media (max-width: 1440px)
+	.circle
+		font-size: 18px
+		& .circle__content
+			.logo__wrapper
+				margin-left: 0
+
+	.sns__container
+		font-size: 17px
+@media (max-width: 1200px)
+	.header
+		height: 400px
+		&--big
+			height: 720px
+			& .header__background
+				height: 620px
+	.circle
+		font-size: 16px
+		margin: 0 auto
+		left: 0
+		right: 0
+	.logo__wrapper
+		font-size: 18px
+
+	.infoLayout
+		&__fluidImgRow
+			&--fluid
+			&_img
+				height: 260px
+			&--small
+				width: 300px
+				margin-right: 10px
+			&--big
+				width: 400px
+
+	.sns__container
+		font-size: 13px
+
+	.whatWeDo
+		font-size: 75px
+		&__row
+			&:nth-child(odd)
+				flex-direction: column-reverse
+				& .whatWeDo__smallCol
+					padding-right: 0
+				& .whatWeDo__bubble
+					left: 0
+			&:nth-child(even)
+				flex-direction: column-reverse
+				& .whatWeDo__smallCol
+					padding-left: 0
+				& .whatWeDo__bigCol
+					justify-content: flex-start
+				& .whatWeDo__bubble
+					right: 0
+		&__smallCol
+			width: 520px
+		&__link
+			&::before
+				height: 16px
+		&__bigCol
+		&__bubble
+			height: 100%
+			width: 5.1em
+			margin: 0 auto
+			left: 0
+			right: 0
+		&__img
+			margin: 0 auto
+
+@media (max-width: 991px)
+	.menuToggler
+		height: 40px
+		width: 40px
+		overflow: hidden
+		background-color: $darkBlue
+		border: none
+		border-radius: 50%
+		display: block
+		position: fixed
+		top: 10px
+		right: 10px
+		z-index: 6
+		&__bar
+			height: 2px
+			width: 18px
+			background-color: #fff
+			display: block
+			margin: 0 auto
+			position: absolute
+			left: 0
+			right: 0
+			transition: .3s ease-in-out
+			&:nth-child(1)
+				top: 14px
+			&:nth-child(2)
+				top: 50%
+				transform: translateY(-50%)
+			&:nth-child(3)
+				bottom: 14px
+		&.menuToggler--open
+			.menuToggler__bar
+				&:nth-child(1)
+					top: 50%
+					transform: translateY(-50%) rotateZ(-45deg)
+				&:nth-child(2)
+					top: 50%
+					transform: translateY(-50%) translateX(100px)
+				&:nth-child(3)
+					bottom: 50%
+					transform: translateY(50%) rotateZ(45deg)
+
+	body.scroll-lock
+		padding-right: 17px
+		.menuToggler
+			right: 27px
+	.header
+		height: 250px
+		&.header--open
+			.navigation__wrapper
+				right: 0
+			.mainLayer
+				height: 100%
+				width: 100%
+				background-color: rgba(0, 0, 0, 0.4)
+				display: block
+				position: fixed
+				top: 0
+				left: 0
+				right: 0
+				transform: scale(1)
+				transition: .3s ease-in-out
+		&--noBackground
+			height: 120px
+		&--big
+			height: 520px
+			& .header__background
+				height: 420px
+		& .navigation__wrapper
+			height: 100%
+			width: calc(100% - 60px)
+			background-color: $darkBlue
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			padding-top: 50px
+			margin-top: 0
+			position: fixed
+			right: -100%
+			// right: 0
+			z-index: 5
+			transition: .3s ease-in-out
+			& .navigation
+				width: 100%
+				flex-direction: column
+				align-items: flex-start
+				// overflow-y: auto
+				// overflow-x: hidden
+				border-radius: 0
+		.logo__wrapper
+			margin-left: 18px
+		& ul.languages
+			margin-left: 0
+			flex-direction: row
+			// order: -1
+			position: absolute
+			top: 20px
+		&--noBackground
+			& .navigation a,
+			& .navigation .subNavigation__link
+				color: #fff
+			& .logo__wrapper
+				.logo
+					background-image: url(../assets/img/logo/circle_logo.png)
+				.logo__title
+					color: #fff
+			.navigation
+				.language
+					color: #fff
+					&:hover
+						color: #fffs
+				.language--active
+					color: #fff
+		& ul
+			flex-direction: column
+		& .aboutUs
+			max-height: 70vh
+			width: 100%
+			overflow-y: auto
+			overflow-x: hidden
+	.navigation
+		&.navigation--dark
+			.joinUs
+				border: none
+		& .aboutUs li
+			width: 100%
+		.joinUs
+			border: none
+			display: block
+			margin: 0
+			margin-top: 5px
+			padding: 0.4em 0
+			&:hover
+				background-color: transparent
+	.subNavigation
+		width: 100%
+		padding: 0
+		position: relative
+		top: 0
+		left: 28px
+		opacity: 1
+		transform: scale(1)
+		&__switcher
+			width: 100%
+		&__item
+			&:hover
+				padding-left: 0
+	.circle
+		font-size: 11px
+		bottom: 40px
+		& .circle__link
+			font-size: 1.5em
+	.logo__wrapper
+		font-size: 13px
+	.section
+		&__title
+			font-size: 30px
+			&--small
+				font-size: 24px
+		&__subTitle
+			font-size: 12px
+	.mission
+		&__content
+			height: auto
+			padding-bottom: 15px
+
+	.imgCollage
+		&__wrapper
+			justify-content: center
+
+	.sns
+		&__container
+		&__mainWrapper
+			padding-left: 15px
+			padding-right: 15px
+		&__wrapper
+			// height: 675px
+			max-width: 60em
+			width: 100%
+			margin: 0 auto
+			position: relative
+		&__img
+			max-height: 100%
+			max-width: 100%
+			width: auto
+			object-fit: contain
+			margin: 0 auto
+		&__item
+			height: 25em
+		&__arrow
+			background-color: rgba(255, 255, 255, .6)
+			border: 2px solid #1E306E
+			&_prev
+				left: 0
+			&_next
+				right: 0
+			&.slick-disabled
+				border: 2px solid #A5CDE9
+		&__arrowIcon
+		&__paging
+			color: #fff
+			background-color: $darkBlue
+			bottom: -25px
+
+	.advantagesContainer
+		font-size: 12px
+
+	.snf
+		&__inputField
+			&--error
+				&.snf__inputField--full::after
+					max-width: none
+					width: auto
+					top: 5px
+					right: 15px
+
+	.footer
+		&__top
+			height: 400px
+		&__description
+			max-width: 350px
+			width: 100%
+			color: #fff
+			font-size: 18px
+			line-height: 1.5
+			margin-top: 20px
+			margin-bottom: 30px
+
+		&__bottom
+			padding-top: 15px
+			padding-bottom: 15px
+		.navigation
+			width: auto
+			justify-content: flex-start
+			padding-left: 0
+			&__wrapper
+				flex-direction: column
+				align-items: flex-start
+				position: relative
+			.aboutUs
+				flex-direction: column
+				li
+					margin-top: 3px
+					margin-bottom: 3px
+					margin-left: 0
+			.languages
+				margin-left: 0
+				position: absolute
+				top: 5px
+				right: 0
+	.copyright
+		margin-top: 10px
+
+@media (max-width: 767px)
+	.infoLayout
+		font-size: 14px
+		&__smallImg
+			margin: 10px auto
+		&__bigImg
+			height: 100vw
+			max-width: 100%
+			margin: 10px auto
+		&__fluidImgRow
+			padding-left: 15px
+			padding-right: 15px
+			&--fluid
+			flex-direction: column
+			align-items: center
+			&_img
+			&--small
+				margin-right: 0
+				margin-bottom: 10px
+			&--big
+		&__tabs .infoLayout__tabItem[role="tab"]
+			font-size: 12px
+			line-height: 16px
+		&__tabs .infoLayout__tabItem[role="tab"] .infoLayout__tabLink
+			padding: 0.63em 0.5em
+		&__bigCol
+			&_tabs
+				max-width: 100%
+				padding-left: 0
+		&__panelHeader
+			flex-direction: column
+			align-items: flex-start
+			margin-top: 8px
+			margin-bottom: 8px
+		&__panelName
+			font-size: 24px
+			line-height: 28px
+		&__panelLogo
+		&__panelText
+			font-size: 14px
+		&__panelLink
+			font-size: 14px
+			line-height: 1.3
+			padding-left: 20px
+			&::before
+				height: 16px
+				width: 16px
+
+	.snf
+		&__inputField
+			&--half
+				width: 100%
+@media (max-width: 600px)
+	.imgCollage
+		font-size: 90px
+	.howItWorks
+		font-size: 15px
+	
+	.whatWeDo
+		&__smallCol
+			width: 100%
+		&__bigCol
+			height: 3em
+			width: 4em
+		&__bubble
+			width: 3.1em
+		&__img
+			height: 2.79855em
+			width: 3.7em
+		&__paging
+			bottom: -25px
+
+@media (max-width: 480px)
+	.header
+		&--big
+			height: 480px
+			& .header__background
+				height: 360px
+	.circle
+		font-size: 8px
+
+	.infoLayout
+		font-size: 14px
+		&__fluidImgRow
+			&--fluid
+			&_img
+			&--small
+				width: 100%
+			&--big
+				width: 100%
+	.imgCollage
+		font-size: 70px
+	.howItWorks
+		&__steps
+			flex-direction: column
+			align-items: center
+			&::before
+				top: 50%
+				transform: translateY(-50%) rotateZ(90deg)
+		&__step1
+			margin-bottom: 100px
+
+	.sns
+		&__item
+			height: 18em
+
+	.snf
+		&__inputField
+		&__label
+		&__selectField
+		&__select
+			.ms-drop
+				padding: 30px 14px 80px
+				ul
+					& > li
+						&:nth-child(n + 7)
+							margin-left: 35px
+		&__selectField
+			.snf__selectSaveBtn
+				left: 20px
+	.footer
+		&__topContainer
+			background-position: center
+			background-size: contain
+		&__top
+				height: 360px
+
+@media (max-width: 446px)
+	.weOffer__panel:nth-child(even)
+		margin-top: 0

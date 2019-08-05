@@ -1,0 +1,180 @@
+* {
+	/* transition: .3s; */
+}
+*,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Font Smoothing With Css */
+/* html {
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+} */
+
+body {
+	font-family: var(--mainFontFamily);
+	font-size: var(--bodyFontSize);
+}
+*:active,
+*:focus,
+*:hover,
+*:visited {
+	text-decoration: none !important;
+	outline: none;
+}
+*,
+:after,
+:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+dl,
+ol,
+ul {
+	list-style-type: none;
+}
+.block {
+	display: block;
+}
+.bold {
+	font-weight: bold;
+}
+.container_lib {
+	max-width: var(--container);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row {
+	margin-left: -15px !important;
+	margin-right: -15px !important;
+}
+.bg {
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.dib {
+	display: inline-block;
+}
+.fixed {
+	position: fixed;
+}
+.full-vh {
+	height: 100vh;
+}
+.fx {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.fx-around {
+	justify-content: space-around;
+}
+.fx-between {
+	justify-content: space-between;
+}
+.fx-center-v {
+	-ms-align-items: center;
+	align-items: center;
+}
+.fx-center-h {
+	justify-content: center;
+}
+.fx-center {
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.fx-column {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+.fx-end {
+	justify-content: flex-end;
+}
+.fx-wrap {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+/*
+	Disable Input Styling for iOS
+*/
+input {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	/* -webkit-appearance: none; */
+}
+.desktop-visible {
+	display: block;
+}
+.mobile-visible {
+	display: none;
+}
+.object-cover {
+	object-fit: cover;
+}
+.res-img {
+	max-width: 100%;
+	height: auto;
+}
+.res-width {
+	width: 25%;
+}
+.round {
+	border-radius: 50%;
+}
+.scroll-lock {
+	overflow: hidden;
+	position: relative;
+}
+.text-center {
+	text-align: center;
+}
+.title {
+	color: var(--mainColor);
+	font-family: var(--titleFontFamily);
+	font-size: var(--mainTitleSize);
+	font-weight: bold;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.subTitle {
+	font-size: var(--subTitle);
+}
+.z-1 {
+	z-index: 1;
+}
+.z-2 {
+	z-index: 2;
+}
+.z-3 {
+	z-index: 3;
+}
+.z-4 {
+	z-index: 4;
+}
+.z-5 {
+	z-index: 5;
+}

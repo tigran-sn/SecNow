@@ -1,0 +1,57 @@
+:root {
+/* UNIVERSAL */
+	/* colors */
+	--mainColor: ;
+	--menuColor: ;
+	--menuHoverColor: ;
+	/* titles */
+	--mainTitleSize: ;
+	--subTitle: ;
+	--buttonSmall: ;
+	--buttonMedium: ;
+	--buttonBig: ;
+	--footerFontSize: ;
+	/* font family */
+	--mainFontFamily: "Geometria";
+	--titleFontFamily: ;
+	--container: 100%;
+	/* fonts */
+	--browserFontSize: ;
+	--bodyFontSize: ;
+	--fontSize-xs: calc(var(--bodyFontSize) * .75); /* 12px if --bodyFontSize = 16px */
+	--fontSize-s: calc(var(--bodyFontSize) * 0.875); /* 14px if --bodyFontSize = 16px */
+	--fontSize-m: calc(var(--bodyFontSize) * 1.125); /* 18px if --bodyFontSize = 16px */
+	--fontSize-l: calc(var(--bodyFontSize) * 1.25); /* 20px if --bodyFontSize = 16px */
+	--fontSize-xl: calc(var(--bodyFontSize) * 1.5); /* 24px if --bodyFontSize = 16px */
+
+	/* Containers */
+	--big-container: ;
+	--medium-container: ;
+	--small-container: ;
+}
+/* Css variables for different @media queries */
+@media (min-width: 1201px) {
+	:root {
+		--mainTitleSize: ;
+	}
+}
+@media (max-width: 1200px) {
+	:root {
+		--mainTitleSize: ;
+	}
+}
+@media (max-width: 991px) {
+	:root {
+		--mainTitleSize: ;
+	}
+}
+@media (max-width: 767px) {
+	:root {
+		--mainTitleSize: ;
+	}
+}
+@media (max-width: 480px) {
+	:root {
+		--mainTitleSize: ;
+	}
+}

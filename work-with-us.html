@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Careers</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="apple-touch-icon" href="icon.png">
+		<!-- Place favicon.ico in the root directory -->
+
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" href="library/icofont/css/icofont.css">
+		<link rel="stylesheet" href="library/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="library/jquery-ui-1.12.1/jquery-ui.min.css">
+		<link rel="stylesheet" href="library//multiple-select/dist/multiple-select.min.css">
+		<link rel="stylesheet" href="css/variables.css">
+		<link rel="stylesheet" href="font/fonts.css">
+		<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/lib.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	<!--
+		Prefix: 
+	-->
+	<body class="page-workWithUs">
+		<header class="header header--small header--noBackground">
+			<button class="menuToggler">
+				<span class="menuToggler__bar menuToggler__bar1"></span>
+				<span class="menuToggler__bar menuToggler__bar2"></span>
+				<span class="menuToggler__bar menuToggler__bar3"></span>
+			</button>
+			<span class="mainLayer"></span>
+			<div class="container">
+				<div class="fx fx-between fx-center-v navigation__wrapper">
+					<a href="index.html" class="logo__wrapper">
+						<span class="logo"></span>
+						<h4 class="logo__title">SecNow</h4>
+					</a>
+					<nav class="fx fx-center-v navigation">
+						<ul class="fx fx-center-v aboutUs">
+							<li class="subNavigation__switcher"><a href="what-we-do.html"><span class="navigation__plusSign">+</span>What we do</a>
+								<ul class="subNavigation">
+									<li class="subNavigation__item">
+										<a href="security-monitoring.html" class="subNavigation__link">Security monitoring</a>
+									</li>
+									<li class="subNavigation__item">
+										<a href="data-storage.html" class="subNavigation__link">Data storage</a>
+									</li>
+									<li class="subNavigation__item">
+										<a href="business-analysis.html" class="subNavigation__link">Business analysis</a>
+									</li>
+									<li class="subNavigation__item">
+										<a href="business-optimization.html" class="subNavigation__link">Business optimization</a>
+									</li>
+									<li class="subNavigation__item">
+										<a href="cyber-security.html" class="subNavigation__link">Cyber security</a>
+									</li>
+									<li class="subNavigation__item">
+										<a href="call-center.html" class="subNavigation__link">Call Center</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="who-we-are.html">Who we are</a></li>
+						</ul>
+						<ul class="fx fx-center-v languages">
+							<li><a class="language language--ru language--active" href="javascript:void(0)">ru</a></li>
+							<li><a class="language language--en" href="javascript:void(0)">en</a></li>
+						</ul>
+						<a href="work-with-us.html" class="joinUs">Work with us</a>
+					</nav>
+				</div>
+			</div>
+			<div class="header__infoWrapper">
+				<div class="header__info">
+					<h2 class="text-center section__title header__pageName">Who We Are</h2>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="workWithUs">
+				<div class="container">
+					<div class="snf__wrapper workWithUs__formWrapper">
+						<form class="snf workWithUs__form" method="GET">
+							<div class="snf__inputField snf__inputField--full workWithUs__inputField" data-error="Full name is required">
+								<input type="text" class="snf__input workWithUs__input" name="fullName" id="workWithUs__fullName" />
+								<label for="workWithUs__fullName" class="snf__label">You full name</label>
+							</div>
+							<div class="snf__inputField snf__inputField--error snf__inputField--full workWithUs__inputField" data-error="Company is required">
+								<input type="text" class="snf__input workWithUs__input" name="company" id="workWithUs__company" />
+								<label for="workWithUs__company" class="snf__label">Company</label>
+							</div>
+							<div class="snf__inputField snf__inputField--full workWithUs__inputField" data-error="Position is required">
+								<input type="text" class="snf__input workWithUs__input" name="position" id="workWithUs__position" />
+								<label for="workWithUs__position" class="snf__label">Position</label>
+							</div>
+							<div class="snf__inputField snf__selectField snf__selectField1 snf__inputField--full workWithUs__inputField" data-error="Service is required">
+								<!-- <input type="text" class="snf__input workWithUs__input" name="position" id="" /> -->
+								<span for="" class="snf__label snf__selectLabel">Preferred services</span>
+								<select id="workWithUs__services" class="snf__select" multiple="multiple" name="services">
+									<option value="security_monitoring">Security monitoring</option>
+									<option value="data_storage">Data storage</option>
+									<option value="business_analysis">Business analysis</option>
+									<option value="business_optimization">Business optimization</option>
+									<option value="cyber_security">Cyber Security</option>
+									<!-- <optgroup label="Cyber Security"> -->
+										<option value="website_audit">Website audit</option>
+										<option value="penetration_testing">Penetration testing</option>
+										<option value="social_engineering">Social Engineering</option>
+									<!-- </optgroup> -->
+								</select>
+								<a href="javascript:void(0)" class="btn btn--small snf__selectSaveBtn">Save</a>
+							</div>
+							<div class="fx fx-between fx-wrap snf__inputGroup workWithUs__inputGroup">
+								<div class="snf__inputField snf__inputField--error snf__inputField--half workWithUs__inputField" data-error="E-mail is required">
+									<input type="email" class="snf__input workWithUs__input" name="email" id="workWithUs__email" />
+									<label for="workWithUs__email" class="snf__label">E-mail</label>
+								</div>
+								<div class="snf__inputField snf__inputField--half workWithUs__inputField" data-error="Phone number is required">
+									<input type="number" class="snf__input workWithUs__input" name="phoneNumber" id="workWithUs__phoneNumber" />
+									<label for="workWithUs__phoneNumber" class="snf__label">Phone Number</label>
+								</div>
+							</div>
+							<div class="fx fx-center-h snf__sumitWrapper">
+								<button class="btn snf__submitBtn workWithUs__submitBtn">Send Request</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="footer__bottom">
+				<div class="container">
+					<div class="fx fx-between fx-center-v navigation__wrapper">
+						<a href="index.html" class="logo__wrapper">
+							<span class="logo"></span>
+							<h4 class="logo__title">SecNow</h4>
+						</a>
+						<nav class="fx fx-center-v fx-end navigation navigation--dark">
+							<ul class="fx fx-center-v aboutUs">
+								<li><a href="javascript:void(0)">What we do</a></li>
+								<li><a href="javascript:void(0)">Who we are</a></li>
+							</ul>
+							<ul class="fx fx-center-v languages">
+								<li><a class="language language--ru language--active" href="javascript:void(0)">ru</a></li>
+								<li><a class="language language--en" href="javascript:void(0)">en</a></li>
+							</ul>
+						</nav>
+					</div>
+					<p class="copyright">&copy; SecNow 2019. All Rights Reserved.</p>
+				</div>
+			</section>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+		</script>
+		<script src="library/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="library/multiple-select/dist/multiple-select.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>

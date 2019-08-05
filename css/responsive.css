@@ -1,0 +1,30 @@
+@media (min-width: 1201px) {}
+@media (max-width: 1200px) {}
+@media (min-width: 992px) {}
+@media (max-width: 991px) {}
+@media (min-width: 768px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+	.res-width {
+		width: 50%;
+	}
+}
+@media (max-width: 767px) {
+	.noScroll {
+		overflow: hidden;
+		position: relative;
+	}
+	.desktop-visible {
+		display: none;
+	}
+	.mobile-visible {
+		display: block;
+	}
+	.res-width {
+		width: 100%;
+	}
+}
+@media (max-width: 480px) {}
+@media (min-width: 320px) {}
+@media (max-width: ) and (orientation: portrait) {}
+@media (max-width: ) and (orientation: landscape) {}
+@media print {}
